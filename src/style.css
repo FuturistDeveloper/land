@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap');
+@import './styles/typography.css';
+
+:root {
+  color-scheme: dark;
+  --bg-deep: #03050c;
+  --text-primary: #f6f8ff;
+  --text-muted: rgba(235, 240, 255, 0.68);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Chakra Petch', sans-serif;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+}
+
+chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: block;
+}
+
+chat-widget .chat-container {
+  z-index: 10000 !important;
+}
+
+chat-widget .liquid-overlay {
+  z-index: 9990 !important;
+}
